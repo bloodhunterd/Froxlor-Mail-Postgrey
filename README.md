@@ -8,13 +8,24 @@ Docker Image of Postgrey for Froxlor Mail Server.
 
 ## Configuration
 
-### Docker environment
+See example [Docker Compose file](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/docker-compose.yml).
+
+### Environment
 
 | ENV | Values¹ | Description
 |--- |--- |---
 | DELAY | 1 - ... | Delay in minutes before the attempted delivery is accepted.
 
 ¹ *Possible values are separated by a slash or a range is indicated by a dash.*
+
+### Volumes
+
+A whitelist of IP's can be mounted as volume like this:
+
+```bash
+volumes:
+    - ./whitelist_clients.local:/etc/postgrey/whitelist_clients.local:ro
+```
 
 ## Update
 

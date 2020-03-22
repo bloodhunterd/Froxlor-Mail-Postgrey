@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  postgrey:
+    image: bloodhunterd/froxlor-mail-postgrey
+    volumes:
+      - ./whitelist_clients.local:/etc/postgrey/whitelist_clients.local:ro
+    restart: unless-stopped
