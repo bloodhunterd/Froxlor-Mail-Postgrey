@@ -2,13 +2,13 @@
 [![Docker Build](https://img.shields.io/docker/cloud/build/bloodhunterd/froxlor-mail-postgrey?style=for-the-badge)](https://hub.docker.com/r/bloodhunterd/froxlor-mail-postgrey)
 [![License](https://img.shields.io/github/license/bloodhunterd/froxlor-mail-postgrey-docker?style=for-the-badge)](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/LICENSE)
 
-# Postgrey Server for Froxlor Mail
+# Postgrey for Froxlor Mail
 
-Docker Image of Postgrey Server for Froxlor Mail.
+Docker Image of Postgrey for Froxlor Mail Server.
 
-### Configuration
+## Configuration
 
-#### Docker environment
+### Docker environment
 
 | ENV | Values¹ | Description
 |--- |--- |---
@@ -16,7 +16,7 @@ Docker Image of Postgrey Server for Froxlor Mail.
 
 ¹ *Possible values are separated by a slash or a range is indicated by a dash.*
 
-### Update
+## Update
 
 Please note the [changelog](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/CHANGELOG.md) to check for configuration changes before updating.
 
