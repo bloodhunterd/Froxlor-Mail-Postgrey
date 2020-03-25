@@ -3,6 +3,8 @@ version: '3'
 services:
   postgrey:
     image: bloodhunterd/froxlor-mail-postgrey
+    environment:
+      - DELAY: 120
     volumes:
       - ./whitelist_clients.local:/etc/postgrey/whitelist_clients.local:ro
     restart: unless-stopped

@@ -14,13 +14,13 @@ See example [Docker Compose file](https://github.com/bloodhunterd/froxlor-mail-p
 
 | ENV | Values¹ | Description
 |--- |--- |---
-| DELAY | 1 - ... | Delay in minutes before the attempted delivery is accepted.
+| DELAY | 1 - ... | Delay in seconds before the attempted delivery is accepted.
 
 ¹ *Possible values are separated by a slash or a range is indicated by a dash.*
 
 ### Volumes
 
-A whitelist of IP's can be mounted as volume like this:
+A whitelist of IP's can be added like this:
 
 ```bash
 volumes:
