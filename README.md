@@ -12,9 +12,9 @@ See example [Docker Compose file](https://github.com/bloodhunterd/froxlor-mail-p
 
 ### Environment
 
-| ENV | Values¹ | Description
+| ENV | Values¹ | Default | Description
 |--- |--- |---
-| DELAY | 1 - ... | Delay in seconds before the attempted delivery is accepted.
+| DELAY | 1 - ... | 120 | Delay in seconds before the attempted delivery is accepted.
 
 ¹ *Possible values are separated by a slash or a range is indicated by a dash.*
 
