@@ -1,31 +1,50 @@
 [![Release](https://img.shields.io/github/v/release/bloodhunterd/froxlor-mail-postgrey-docker?include_prereleases&style=for-the-badge)](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/releases)
-[![Docker Build](https://img.shields.io/docker/cloud/build/bloodhunterd/froxlor-mail-postgrey?style=for-the-badge)](https://hub.docker.com/r/bloodhunterd/froxlor-mail-postgrey)
+[![Docker Build](https://img.shields.io/github/workflow/status/bloodhunterd/froxlor-mail-postgrey-docker/Docker?style=for-the-badge&label=Docker%20Build)](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/actions?query=workflow%3ADocker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/bloodhunterd/froxlor-mail-postgrey?style=for-the-badge)](https://hub.docker.com/r/bloodhunterd/froxlor-mail-postgrey)
 [![License](https://img.shields.io/github/license/bloodhunterd/froxlor-mail-postgrey-docker?style=for-the-badge)](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/LICENSE)
 
-# Postgrey for Froxlor Mail
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/bloodhunterd)
 
-Docker Image of Postgrey for Froxlor Mail Server.
+# Froxlor Mail Postgrey Docker
 
-## Configuration
+Docker image of Postgrey for Froxlor Server Management Panel.
 
-See example [Docker Compose file](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/docker-compose.yml).
+This image is meant to be used with the [Froxlor Mail Docker](https://github.com/bloodhunterd/froxlor-mail-docker) image.
+
+## Deployment
+
+### Docker Compose
+
+```dockerfile
+version: '2.4'
+
+services:
+  postgrey:
+    image: bloodhunterd/froxlor-mail-postgrey
+    volumes:
+      - ./whitelist_clients.local:/etc/postgrey/whitelist_clients.local:ro
+```
 
 ### Environment
 
-| ENV | Values¹ | Default | Description
-|--- |--- |---
-| DELAY | 1 - ... | 120 | Delay in seconds before the attempted delivery is accepted.
+| ENV | Values | Default | Description
+| --- | ------- | ------- | -----------
+| DELAY | Seconds | 120 | Delay in seconds before the attempted delivery is accepted.
 
-¹ *Possible values are separated by a slash or a range is indicated by a dash.*
+### Ports
+
+| Port | Description
+| ---: | -----------
+| 10023  | Postgrey
 
 ### Volumes
 
-A whitelist of IP's can be added like this:
+| Volume | Path | Read only | Description
+| ------ | ---- | :-------: | -----------
+| Whitelist | /etc/postgrey/whitelist_clients.local | &#10004; | Exclude listed IP's from delay. 
 
-```bash
-volumes:
-    - ./whitelist_clients.local:/etc/postgrey/whitelist_clients.local:ro
-```
+| &#10004; Yes | &#10008; No
+| ------------ | -----------
 
 ## Update
 
@@ -43,4 +62,4 @@ Please note the [changelog](https://github.com/bloodhunterd/froxlor-mail-postgre
 
 ## License
 
-This project is licensed under the Unlicense - see [LICENSE.md](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/LICENSE) file for details.
+This project is licensed under the MIT - see [LICENSE.md](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/LICENSE) file for details.
