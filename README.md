@@ -1,15 +1,15 @@
-[![Release](https://img.shields.io/github/v/release/bloodhunterd/froxlor-mail-postgrey-docker?include_prereleases&style=for-the-badge)](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/releases)
-[![Docker Build](https://img.shields.io/github/workflow/status/bloodhunterd/froxlor-mail-postgrey-docker/Docker?style=for-the-badge&label=Docker%20Build)](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/actions?query=workflow%3ADocker)
+[![Release](https://img.shields.io/github/v/release/bloodhunterd/froxlor-mail-postgrey?style=for-the-badge)](https://github.com/bloodhunterd/froxlor-mail-postgrey/releases)
+[![Docker Build](https://img.shields.io/github/workflow/status/bloodhunterd/froxlor-mail-postgrey-docker/Docker?style=for-the-badge&label=Docker%20Build)](https://github.com/bloodhunterd/froxlor-mail-postgrey/actions?query=workflow%3ADocker)
 [![Docker Pulls](https://img.shields.io/docker/pulls/bloodhunterd/froxlor-mail-postgrey?style=for-the-badge)](https://hub.docker.com/r/bloodhunterd/froxlor-mail-postgrey)
-[![License](https://img.shields.io/github/license/bloodhunterd/froxlor-mail-postgrey-docker?style=for-the-badge)](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/bloodhunterd/froxlor-mail-postgrey?style=for-the-badge)](https://github.com/bloodhunterd/froxlor-mail-postgrey/blob/master/LICENSE)
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/bloodhunterd)
 
-# Froxlor Mail Postgrey Docker
+# Froxlor Mail Postgrey
 
 Docker image of Postgrey for Froxlor Server Management Panel.
 
-This image is meant to be used with the [Froxlor Mail Docker](https://github.com/bloodhunterd/froxlor-mail-docker) image.
+*This image is meant to be used with the [Froxlor Mail Docker](https://github.com/bloodhunterd/froxlor-mail-docker) image.*
 
 ## Deployment
 
@@ -48,7 +48,7 @@ services:
 
 ## Update
 
-Please note the [changelog](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/CHANGELOG.md) to check for configuration changes before updating.
+Please note the [changelog](https://github.com/bloodhunterd/froxlor-mail-postgrey/blob/master/CHANGELOG.md) to check for configuration changes before updating.
 
 ## Build With
 
@@ -62,4 +62,4 @@ Please note the [changelog](https://github.com/bloodhunterd/froxlor-mail-postgre
 
 ## License
 
-This project is licensed under the MIT - see [LICENSE.md](https://github.com/bloodhunterd/froxlor-mail-postgrey-docker/blob/master/LICENSE) file for details.
+This project is licensed under the MIT - see [LICENSE.md](https://github.com/bloodhunterd/froxlor-mail-postgrey/blob/master/LICENSE) file for details.
